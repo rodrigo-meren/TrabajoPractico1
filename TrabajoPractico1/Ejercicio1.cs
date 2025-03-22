@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace TrabajoPractico1
 {
-    public partial class inicio: Form
+    public partial class Ejercicio1: Form
     {
-        public inicio()
+        inicio inicio;
+        public Ejercicio1(inicio inicio)
         {
             InitializeComponent();
+            this.inicio = inicio;
+        }
+
+        private void Ejercicio1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            inicio.Show();
         }
     }
 }
