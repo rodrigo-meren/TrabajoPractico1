@@ -23,5 +23,45 @@ namespace TrabajoPractico1
         {
             inicio.Show();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "")
+                txtNombre.BackColor = Color.Red;
+            else
+                txtNombre.BackColor = System.Drawing.SystemColors.Control;
+
+            if (txtNombre.Text != "")
+            {
+                if (!(nombreRepetido(txtNombre.Text.ToString())))
+                    lbxIzquierda.Items.Add(txtNombre.Text);
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar un nombre");
+            }
+
+                txtNombre.Text = "";
+        }
+
+        private bool nombreRepetido(string nombre)
+        {
+            bool repetido = false;
+
+            for (int i = 0; i < lbxIzquierda.Items.Count; i++)
+            {
+                if (lbxIzquierda.Items[i].ToString().ToUpper() == nombre.ToUpper())
+                    repetido = true; 
+            }
+
+            return repetido;
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != 8)
+                e.Handled = true;
+        }
+
     }
 }

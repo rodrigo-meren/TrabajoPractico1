@@ -29,86 +29,105 @@
         private void InitializeComponent()
         {
             this.btnEj1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblIntegrantes = new System.Windows.Forms.Label();
             this.btnEj3 = new System.Windows.Forms.Button();
             this.btnEj2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNombre1 = new System.Windows.Forms.Label();
+            this.lblNombre2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEj1
             // 
-            this.btnEj1.BackColor = System.Drawing.SystemColors.Window;
+            this.btnEj1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEj1.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnEj1.FlatAppearance.BorderSize = 2;
-            this.btnEj1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEj1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEj1.Location = new System.Drawing.Point(58, 114);
+            this.btnEj1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEj1.Location = new System.Drawing.Point(29, 59);
+            this.btnEj1.Margin = new System.Windows.Forms.Padding(20, 50, 2, 2);
             this.btnEj1.Name = "btnEj1";
-            this.btnEj1.Size = new System.Drawing.Size(182, 58);
+            this.btnEj1.Size = new System.Drawing.Size(136, 47);
             this.btnEj1.TabIndex = 0;
             this.btnEj1.Text = "Ejercicio 1";
             this.btnEj1.UseVisualStyleBackColor = false;
             this.btnEj1.Click += new System.EventHandler(this.btnEj1_Click);
             // 
-            // label1
+            // lblIntegrantes
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 254);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Integrantes:";
+            this.lblIntegrantes.AutoSize = true;
+            this.lblIntegrantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIntegrantes.Location = new System.Drawing.Point(58, 148);
+            this.lblIntegrantes.Margin = new System.Windows.Forms.Padding(2, 40, 2, 0);
+            this.lblIntegrantes.Name = "lblIntegrantes";
+            this.lblIntegrantes.Size = new System.Drawing.Size(107, 20);
+            this.lblIntegrantes.TabIndex = 3;
+            this.lblIntegrantes.Text = "Integrantes:";
             // 
             // btnEj3
             // 
-            this.btnEj3.BackColor = System.Drawing.SystemColors.Window;
+            this.btnEj3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEj3.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnEj3.FlatAppearance.BorderSize = 2;
-            this.btnEj3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEj3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEj3.Location = new System.Drawing.Point(487, 114);
+            this.btnEj3.Location = new System.Drawing.Point(345, 59);
+            this.btnEj3.Margin = new System.Windows.Forms.Padding(20, 50, 2, 2);
             this.btnEj3.Name = "btnEj3";
-            this.btnEj3.Size = new System.Drawing.Size(182, 58);
+            this.btnEj3.Size = new System.Drawing.Size(136, 47);
             this.btnEj3.TabIndex = 4;
             this.btnEj3.Text = "Ejercicio 3";
             this.btnEj3.UseVisualStyleBackColor = false;
             // 
             // btnEj2
             // 
-            this.btnEj2.BackColor = System.Drawing.SystemColors.Window;
+            this.btnEj2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEj2.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnEj2.FlatAppearance.BorderSize = 2;
-            this.btnEj2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEj2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEj2.Location = new System.Drawing.Point(271, 114);
+            this.btnEj2.Location = new System.Drawing.Point(187, 59);
+            this.btnEj2.Margin = new System.Windows.Forms.Padding(20, 50, 2, 2);
             this.btnEj2.Name = "btnEj2";
-            this.btnEj2.Size = new System.Drawing.Size(182, 58);
+            this.btnEj2.Size = new System.Drawing.Size(136, 47);
             this.btnEj2.TabIndex = 5;
             this.btnEj2.Text = "Ejercicio 2";
             this.btnEj2.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // lblNombre1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(204, 294);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Meren Rodrigo";
+            this.lblNombre1.AutoSize = true;
+            this.lblNombre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre1.Location = new System.Drawing.Point(162, 188);
+            this.lblNombre1.Margin = new System.Windows.Forms.Padding(2, 20, 2, 0);
+            this.lblNombre1.Name = "lblNombre1";
+            this.lblNombre1.Size = new System.Drawing.Size(127, 20);
+            this.lblNombre1.TabIndex = 6;
+            this.lblNombre1.Text = "Meren Rodrigo";
+            // 
+            // lblNombre2
+            // 
+            this.lblNombre2.AutoSize = true;
+            this.lblNombre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre2.Location = new System.Drawing.Point(162, 228);
+            this.lblNombre2.Margin = new System.Windows.Forms.Padding(2, 20, 2, 0);
+            this.lblNombre2.Name = "lblNombre2";
+            this.lblNombre2.Size = new System.Drawing.Size(106, 20);
+            this.lblNombre2.TabIndex = 7;
+            this.lblNombre2.Text = "Varela Elian";
             // 
             // inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 606);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(510, 492);
+            this.Controls.Add(this.lblNombre2);
+            this.Controls.Add(this.lblNombre1);
             this.Controls.Add(this.btnEj2);
             this.Controls.Add(this.btnEj3);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblIntegrantes);
             this.Controls.Add(this.btnEj1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(526, 531);
+            this.MinimumSize = new System.Drawing.Size(526, 531);
             this.Name = "inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inicio";
@@ -120,10 +139,11 @@
         #endregion
 
         private System.Windows.Forms.Button btnEj1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblIntegrantes;
         private System.Windows.Forms.Button btnEj3;
         private System.Windows.Forms.Button btnEj2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNombre1;
+        private System.Windows.Forms.Label lblNombre2;
     }
 }
 

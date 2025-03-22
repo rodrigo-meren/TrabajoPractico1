@@ -23,5 +23,6 @@ namespace TrabajoPractico1
             ejercicio1.Show();
             this.Hide();
         }
+
     }
 }
