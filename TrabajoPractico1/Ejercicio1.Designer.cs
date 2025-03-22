@@ -103,6 +103,7 @@
             this.btnUno.TabIndex = 5;
             this.btnUno.Text = ">";
             this.btnUno.UseVisualStyleBackColor = true;
+            this.btnUno.Click += new System.EventHandler(this.btnUno_Click);
             // 
             // btnTodos
             // 

@@ -35,6 +35,8 @@ namespace TrabajoPractico1
             {
                 if (!(nombreRepetido(txtNombre.Text.ToString())))
                     lbxIzquierda.Items.Add(txtNombre.Text);
+                else
+                    MessageBox.Show("Ya existe un registro con ese nombre.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -46,15 +48,17 @@ namespace TrabajoPractico1
 
         private bool nombreRepetido(string nombre)
         {
-            bool repetido = false;
-
             for (int i = 0; i < lbxIzquierda.Items.Count; i++)
             {
                 if (lbxIzquierda.Items[i].ToString().ToUpper() == nombre.ToUpper())
-                    repetido = true; 
+                    return true; 
             }
 
-            return repetido;
+            for (int i = 0; i < lbxDerecha.Items.Count; i++)
+                if (lbxDerecha.Items[i].ToString().ToUpper() == nombre.ToUpper())
+                    return true;
+
+            return false;
         }
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
@@ -63,5 +67,16 @@ namespace TrabajoPractico1
                 e.Handled = true;
         }
 
+        private void btnUno_Click(object sender, EventArgs e)
+        {
+            if(lbxIzquierda.SelectedItem == null)
+            {
+                MessageBox.Show("Debe seleccionar un nombre.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            lbxDerecha.Items.Add(lbxIzquierda.SelectedItem);
+            lbxIzquierda.Items.Remove(lbxIzquierda.SelectedItem);
+        }
     }
 }

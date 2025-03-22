@@ -34,6 +34,7 @@
             this.btnEj2 = new System.Windows.Forms.Button();
             this.lblNombre1 = new System.Windows.Forms.Label();
             this.lblNombre2 = new System.Windows.Forms.Label();
+            this.lblNombre3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEj1
@@ -113,11 +114,23 @@
             this.lblNombre2.TabIndex = 7;
             this.lblNombre2.Text = "Varela Elian";
             // 
+            // lblNombre3
+            // 
+            this.lblNombre3.AutoSize = true;
+            this.lblNombre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre3.Location = new System.Drawing.Point(162, 268);
+            this.lblNombre3.Margin = new System.Windows.Forms.Padding(2, 20, 2, 0);
+            this.lblNombre3.Name = "lblNombre3";
+            this.lblNombre3.Size = new System.Drawing.Size(210, 20);
+            this.lblNombre3.TabIndex = 8;
+            this.lblNombre3.Text = "Martínez Tomás Ezequiel";
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 492);
+            this.Controls.Add(this.lblNombre3);
             this.Controls.Add(this.lblNombre2);
             this.Controls.Add(this.lblNombre1);
             this.Controls.Add(this.btnEj2);
@@ -144,6 +157,7 @@
         private System.Windows.Forms.Button btnEj2;
         private System.Windows.Forms.Label lblNombre1;
         private System.Windows.Forms.Label lblNombre2;
+        private System.Windows.Forms.Label lblNombre3;
     }
 }
 
