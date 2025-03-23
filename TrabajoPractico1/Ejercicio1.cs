@@ -27,24 +27,25 @@ namespace TrabajoPractico1
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (txtNombre.Text == "")
+            {
                 txtNombre.BackColor = Color.Red;
+                MessageBox.Show("Debe ingresar un nombre", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNombre.BackColor = System.Drawing.SystemColors.Window;
+            }
             else
-                txtNombre.BackColor = System.Drawing.SystemColors.Control;
-
-            if (txtNombre.Text != "")
             {
                 if (!(nombreRepetido(txtNombre.Text.ToString())))
                     lbxIzquierda.Items.Add(txtNombre.Text);
                 else
-                    MessageBox.Show("Ya existe un registro con ese nombre.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                {
+                    txtNombre.BackColor = Color.Red;
+                    MessageBox.Show("Ya existe un registro con ese nombre.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtNombre.BackColor = System.Drawing.SystemColors.Window;
+                }
             }
-            else
-            {
-                MessageBox.Show("Debe ingresar un nombre");
-            }
-
-                txtNombre.Text = "";
+            txtNombre.Text = "";
         }
+
 
         private bool nombreRepetido(string nombre)
         {
@@ -83,7 +84,7 @@ namespace TrabajoPractico1
         {
             if (lbxIzquierda.Items.Count == 0)
             {
-                MessageBox.Show("Por favor ingrese un nombre primero", "Atencion");
+                MessageBox.Show("Por favor ingrese un nombre primero", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

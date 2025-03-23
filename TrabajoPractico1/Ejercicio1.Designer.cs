@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ejercicio1));
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lblIngreseUnNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -53,11 +54,11 @@
             // lblIngreseUnNombre
             // 
             this.lblIngreseUnNombre.AutoSize = true;
-            this.lblIngreseUnNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngreseUnNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIngreseUnNombre.Location = new System.Drawing.Point(59, 59);
             this.lblIngreseUnNombre.Margin = new System.Windows.Forms.Padding(50, 50, 2, 0);
             this.lblIngreseUnNombre.Name = "lblIngreseUnNombre";
-            this.lblIngreseUnNombre.Size = new System.Drawing.Size(163, 18);
+            this.lblIngreseUnNombre.Size = new System.Drawing.Size(147, 20);
             this.lblIngreseUnNombre.TabIndex = 1;
             this.lblIngreseUnNombre.Text = "Ingrese un nombre:";
             // 
@@ -76,7 +77,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbxIzquierda.FormattingEnabled = true;
-            this.lbxIzquierda.Location = new System.Drawing.Point(62, 127);
+            this.lbxIzquierda.Location = new System.Drawing.Point(63, 127);
             this.lbxIzquierda.Margin = new System.Windows.Forms.Padding(50);
             this.lbxIzquierda.Name = "lbxIzquierda";
             this.lbxIzquierda.Size = new System.Drawing.Size(196, 277);
@@ -92,6 +93,7 @@
             this.lbxDerecha.Margin = new System.Windows.Forms.Padding(50);
             this.lbxDerecha.Name = "lbxDerecha";
             this.lbxDerecha.Size = new System.Drawing.Size(196, 277);
+            this.lbxDerecha.Sorted = true;
             this.lbxDerecha.TabIndex = 4;
             // 
             // btnUno
@@ -128,12 +130,13 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblIngreseUnNombre);
             this.Controls.Add(this.btnAgregar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(671, 800);
             this.MinimumSize = new System.Drawing.Size(671, 242);
             this.Name = "Ejercicio1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ejercicio1";
+            this.Text = "Ejercicio 1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ejercicio1_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
