@@ -35,6 +35,7 @@
             this.lblNombre1 = new System.Windows.Forms.Label();
             this.lblNombre2 = new System.Windows.Forms.Label();
             this.lblNombre3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEj1
@@ -125,11 +126,22 @@
             this.lblNombre3.TabIndex = 8;
             this.lblNombre3.Text = "Martínez Tomás Ezequiel";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(162, 305);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 20);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Poliserpi Pablo Nicolas";
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 492);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNombre3);
             this.Controls.Add(this.lblNombre2);
             this.Controls.Add(this.lblNombre1);
@@ -158,6 +170,7 @@
         private System.Windows.Forms.Label lblNombre1;
         private System.Windows.Forms.Label lblNombre2;
         private System.Windows.Forms.Label lblNombre3;
+        private System.Windows.Forms.Label label1;
     }
 }
 

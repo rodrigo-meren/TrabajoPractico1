@@ -114,6 +114,7 @@
             this.btnTodos.TabIndex = 6;
             this.btnTodos.Text = ">>";
             this.btnTodos.UseVisualStyleBackColor = true;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
             // 
             // Ejercicio1
             // 

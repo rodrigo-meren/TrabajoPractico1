@@ -78,5 +78,21 @@ namespace TrabajoPractico1
             lbxDerecha.Items.Add(lbxIzquierda.SelectedItem);
             lbxIzquierda.Items.Remove(lbxIzquierda.SelectedItem);
         }
+
+        private void btnTodos_Click(object sender, EventArgs e)
+        {
+            if (lbxIzquierda.Items.Count == 0)
+            {
+                MessageBox.Show("Por favor ingrese un nombre primero", "Atencion");
+                return;
+            }
+
+            foreach (string nombre in lbxIzquierda.Items)
+            {
+                lbxDerecha.Items.Add(nombre);
+            }
+
+            lbxIzquierda.Items.Clear();
+        }
     }
 }
