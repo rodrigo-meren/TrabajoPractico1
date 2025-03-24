@@ -97,6 +97,7 @@
             this.btnEj2.TabIndex = 5;
             this.btnEj2.Text = "Ejercicio 2";
             this.btnEj2.UseVisualStyleBackColor = false;
+            this.btnEj2.Click += new System.EventHandler(this.btnEj2_Click);
             // 
             // lblNombre1
             // 
@@ -156,7 +157,6 @@
             this.lblNombre5.Size = new System.Drawing.Size(203, 22);
             this.lblNombre5.TabIndex = 10;
             this.lblNombre5.Text = "Cuello Saavedra Franco";
-            this.lblNombre5.Click += new System.EventHandler(this.label2_Click);
             // 
             // inicio
             // 

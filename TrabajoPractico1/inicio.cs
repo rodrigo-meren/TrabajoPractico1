@@ -24,9 +24,11 @@ namespace TrabajoPractico1
             this.Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnEj2_Click(object sender, EventArgs e)
         {
-
+            Ejercicio2 ejercicio2 = new Ejercicio2(this);
+            ejercicio2.Show();
+            this.Hide();
         }
     }
 }
