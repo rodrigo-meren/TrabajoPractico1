@@ -50,11 +50,9 @@ namespace TrabajoPractico1
         private bool nombreRepetido(string nombre)
         {
             for (int i = 0; i < lbxIzquierda.Items.Count; i++)
-            {
                 if (lbxIzquierda.Items[i].ToString().ToUpper() == nombre.ToUpper())
                     return true; 
-            }
-
+            
             for (int i = 0; i < lbxDerecha.Items.Count; i++)
                 if (lbxDerecha.Items[i].ToString().ToUpper() == nombre.ToUpper())
                     return true;

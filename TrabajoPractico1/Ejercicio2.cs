@@ -61,13 +61,29 @@ namespace TrabajoPractico1
             }
         }
 
+        private bool nombreApellidoRepetidos(string nombre1, string apellido1)
+        {
+            string nombre2, apellido2;
+
+            for (int i = 0; i < lbElementos.Items.Count; i++)
+            {
+                nombre2 = lbElementos.Items[i].ToString().Split(' ')[0];
+                apellido2 = lbElementos.Items[i].ToString().Split(' ')[1];
+
+                if (nombre1.ToUpper() == nombre2.ToUpper() && apellido1.ToUpper() == apellido2.ToUpper())
+                    return true;
+            }
+            
+            return false;        
+        }
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (txtNombre.Text == "Ingrese un nombre" || txtApellido.Text == "Ingrese un apellido")
             {
                 MessageBox.Show("Debe ingresar un nombre y un apellido", "Atención", MessageBoxButtons.OK , MessageBoxIcon.Warning);
             }
-            else
+            else if (!(nombreApellidoRepetidos(txtNombre.Text.ToString(), txtApellido.Text.ToString())))
             {
                 lbElementos.Items.Add(txtNombre.Text + " " + txtApellido.Text);
                 txtNombre.Text = "Ingrese un nombre";
@@ -92,5 +108,6 @@ namespace TrabajoPractico1
                 MessageBox.Show("Se ha borrado la entrada --> " + mostrar_elemento, "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
     }
 }

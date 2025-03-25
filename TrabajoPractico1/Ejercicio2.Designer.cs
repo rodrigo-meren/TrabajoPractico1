@@ -66,7 +66,7 @@
             this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(146, 23);
-            this.txtApellido.TabIndex = 4;
+            this.txtApellido.TabIndex = 2;
             this.txtApellido.Text = "Ingrese un apellido";
             this.txtApellido.Enter += new System.EventHandler(this.txtApellido_Enter);
             this.txtApellido.Leave += new System.EventHandler(this.txtApellido_Leave);
@@ -91,7 +91,7 @@
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(131, 56);
-            this.btnAgregar.TabIndex = 2;
+            this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -177,9 +177,9 @@
         private System.Windows.Forms.GroupBox gbIngresoDatos;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.GroupBox gbElementos;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.ListBox lbElementos;
