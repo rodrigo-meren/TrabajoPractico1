@@ -65,7 +65,7 @@ namespace TrabajoPractico1
         {
             if (txtNombre.Text == "Ingrese un nombre" || txtApellido.Text == "Ingrese un apellido")
             {
-                MessageBox.Show("Debe ingresar un nombre y un apellido", "Atención");
+                MessageBox.Show("Debe ingresar un nombre y un apellido", "Atención", MessageBoxButtons.OK , MessageBoxIcon.Warning);
             }
             else
             {
@@ -74,6 +74,22 @@ namespace TrabajoPractico1
                 txtNombre.ForeColor = Color.Gray;
                 txtApellido.Text = "Ingrese un apellido";
                 txtApellido.ForeColor = Color.Gray;
+            }
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if (lbElementos.SelectedItem == null)
+            {
+                MessageBox.Show("Debe seleccionar un nombre.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                string mostrar_elemento;
+                mostrar_elemento = lbElementos.SelectedItem.ToString();
+                lbElementos.Items.Remove(lbElementos.SelectedItem);
+                MessageBox.Show("Se ha borrado la entrada --> " + mostrar_elemento, "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

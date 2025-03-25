@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ejercicio2));
             this.gbIngresoDatos = new System.Windows.Forms.GroupBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -35,8 +36,8 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.gbElementos = new System.Windows.Forms.GroupBox();
-            this.lbElementos = new System.Windows.Forms.ListBox();
             this.btnBorrar = new System.Windows.Forms.Button();
+            this.lbElementos = new System.Windows.Forms.ListBox();
             this.gbIngresoDatos.SuspendLayout();
             this.gbElementos.SuspendLayout();
             this.SuspendLayout();
@@ -50,9 +51,9 @@
             this.gbIngresoDatos.Controls.Add(this.lblNombre);
             this.gbIngresoDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbIngresoDatos.Location = new System.Drawing.Point(16, 26);
-            this.gbIngresoDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbIngresoDatos.Margin = new System.Windows.Forms.Padding(2);
             this.gbIngresoDatos.Name = "gbIngresoDatos";
-            this.gbIngresoDatos.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbIngresoDatos.Padding = new System.Windows.Forms.Padding(2);
             this.gbIngresoDatos.Size = new System.Drawing.Size(302, 401);
             this.gbIngresoDatos.TabIndex = 0;
             this.gbIngresoDatos.TabStop = false;
@@ -62,7 +63,7 @@
             // 
             this.txtApellido.ForeColor = System.Drawing.Color.Gray;
             this.txtApellido.Location = new System.Drawing.Point(108, 153);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(146, 23);
             this.txtApellido.TabIndex = 4;
@@ -87,7 +88,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(74, 215);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(131, 56);
             this.btnAgregar.TabIndex = 2;
@@ -99,7 +100,7 @@
             // 
             this.txtNombre.ForeColor = System.Drawing.Color.Gray;
             this.txtNombre.Location = new System.Drawing.Point(108, 108);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(146, 23);
             this.txtNombre.TabIndex = 1;
@@ -130,15 +131,6 @@
             this.gbElementos.TabStop = false;
             this.gbElementos.Text = "Elementos";
             // 
-            // lbElementos
-            // 
-            this.lbElementos.FormattingEnabled = true;
-            this.lbElementos.ItemHeight = 17;
-            this.lbElementos.Location = new System.Drawing.Point(7, 23);
-            this.lbElementos.Name = "lbElementos";
-            this.lbElementos.Size = new System.Drawing.Size(289, 293);
-            this.lbElementos.TabIndex = 0;
-            // 
             // btnBorrar
             // 
             this.btnBorrar.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -149,6 +141,17 @@
             this.btnBorrar.TabIndex = 1;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
+            // lbElementos
+            // 
+            this.lbElementos.FormattingEnabled = true;
+            this.lbElementos.ItemHeight = 17;
+            this.lbElementos.Location = new System.Drawing.Point(7, 23);
+            this.lbElementos.Name = "lbElementos";
+            this.lbElementos.Size = new System.Drawing.Size(289, 293);
+            this.lbElementos.Sorted = true;
+            this.lbElementos.TabIndex = 0;
             // 
             // Ejercicio2
             // 
@@ -157,6 +160,7 @@
             this.ClientSize = new System.Drawing.Size(659, 450);
             this.Controls.Add(this.gbElementos);
             this.Controls.Add(this.gbIngresoDatos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ejercicio2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nombre y Apellido";
