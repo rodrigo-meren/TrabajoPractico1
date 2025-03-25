@@ -26,7 +26,7 @@ namespace TrabajoPractico1
 
         private void txtNombre_Enter(object sender, EventArgs e)
         {
-            if(txtNombre.Text =="Ingrese un nombre")
+            if(txtNombre.Text == "Ingrese un nombre")
             {
                 txtNombre.Text = "";
                 txtNombre.ForeColor = Color.Black;
@@ -56,6 +56,22 @@ namespace TrabajoPractico1
         {
             if (txtApellido.Text == "")
             {   
+                txtApellido.Text = "Ingrese un apellido";
+                txtApellido.ForeColor = Color.Gray;
+            }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "Ingrese un nombre" || txtApellido.Text == "Ingrese un apellido")
+            {
+                MessageBox.Show("Debe ingresar un nombre y un apellido", "Atención");
+            }
+            else
+            {
+                lbElementos.Items.Add(txtNombre.Text + " " + txtApellido.Text);
+                txtNombre.Text = "Ingrese un nombre";
+                txtNombre.ForeColor = Color.Gray;
                 txtApellido.Text = "Ingrese un apellido";
                 txtApellido.ForeColor = Color.Gray;
             }
