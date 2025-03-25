@@ -23,5 +23,42 @@ namespace TrabajoPractico1
         {
             inicio.Show();
         }
+
+        private void txtNombre_Enter(object sender, EventArgs e)
+        {
+            if(txtNombre.Text =="Ingrese un nombre")
+            {
+                txtNombre.Text = "";
+                txtNombre.ForeColor = Color.Black;
+            }
+           
+        }
+
+        private void txtNombre_Leave(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "")
+            {
+                txtNombre.Text = "Ingrese un nombre";
+                txtNombre.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtApellido_Enter(object sender, EventArgs e)
+        {
+            if (txtApellido.Text == "Ingrese un apellido")
+            {
+                txtApellido.Text = "";
+                txtApellido.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtApellido_Leave(object sender, EventArgs e)
+        {
+            if (txtApellido.Text == "")
+            {   
+                txtApellido.Text = "Ingrese un apellido";
+                txtApellido.ForeColor = Color.Gray;
+            }
+        }
     }
 }
