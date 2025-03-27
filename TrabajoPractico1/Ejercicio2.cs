@@ -79,18 +79,22 @@ namespace TrabajoPractico1
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "Ingrese un nombre" || txtApellido.Text == "Ingrese un apellido")
+            if (txtNombre.Text == "Ingrese un nombre" || txtApellido.Text == "Ingrese un apellido" || string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtNombre.Text))
             {
                 MessageBox.Show("Debe ingresar un nombre y un apellido", "Atención", MessageBoxButtons.OK , MessageBoxIcon.Warning);
+                return;
             }
-            else if (!(nombreApellidoRepetidos(txtNombre.Text.ToString(), txtApellido.Text.ToString())))
+            if(nombreApellidoRepetidos(txtNombre.Text.Trim(), txtApellido.Text.Trim()))
             {
-                lbElementos.Items.Add(txtNombre.Text + " " + txtApellido.Text);
-                txtNombre.Text = "Ingrese un nombre";
-                txtNombre.ForeColor = Color.Gray;
-                txtApellido.Text = "Ingrese un apellido";
-                txtApellido.ForeColor = Color.Gray;
+                MessageBox.Show("Ya existe un registro con ese nombre y apellido", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
+
+            lbElementos.Items.Add(txtNombre.Text.Trim() + " " + txtApellido.Text.Trim());
+            txtNombre.Text = "Ingrese un nombre";
+            txtNombre.ForeColor = Color.Gray;
+            txtApellido.Text = "Ingrese un apellido";
+            txtApellido.ForeColor = Color.Gray;
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
