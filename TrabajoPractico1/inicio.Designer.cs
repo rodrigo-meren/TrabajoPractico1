@@ -1,6 +1,6 @@
 ﻿namespace TrabajoPractico1
 {
-    partial class inicio
+    partial class Inicio
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inicio));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.btnEj1 = new System.Windows.Forms.Button();
             this.lblIntegrantes = new System.Windows.Forms.Label();
             this.btnEj3 = new System.Windows.Forms.Button();
@@ -83,6 +83,7 @@
             this.btnEj3.TabIndex = 4;
             this.btnEj3.Text = "Ejercicio 3";
             this.btnEj3.UseVisualStyleBackColor = false;
+            this.btnEj3.Click += new System.EventHandler(this.btnEj3_Click);
             // 
             // btnEj2
             // 
@@ -158,7 +159,7 @@
             this.lblNombre5.TabIndex = 10;
             this.lblNombre5.Text = "Cuello Saavedra Franco";
             // 
-            // inicio
+            // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -177,7 +178,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(526, 531);
             this.MinimumSize = new System.Drawing.Size(526, 531);
-            this.Name = "inicio";
+            this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario Principal";
             this.ResumeLayout(false);

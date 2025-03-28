@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TrabajoPractico1
 {
-    public partial class inicio: Form
+    public partial class Inicio: Form
     {
-        public inicio()
+        public Inicio()
         {
             InitializeComponent();
         }
@@ -28,6 +28,13 @@ namespace TrabajoPractico1
         {
             Ejercicio2 ejercicio2 = new Ejercicio2(this);
             ejercicio2.Show();
+            this.Hide();
+        }
+
+        private void btnEj3_Click(object sender, EventArgs e)
+        {
+            Ejercicio3 ejercicio3 = new Ejercicio3(this);
+            ejercicio3.Show();
             this.Hide();
         }
     }

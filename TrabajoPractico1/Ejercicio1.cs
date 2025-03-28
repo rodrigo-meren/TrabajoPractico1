@@ -12,8 +12,8 @@ namespace TrabajoPractico1
 {
     public partial class Ejercicio1: Form
     {
-        inicio inicio;
-        public Ejercicio1(inicio inicio)
+        Inicio inicio;
+        public Ejercicio1(Inicio inicio)
         {
             InitializeComponent();
             this.inicio = inicio;

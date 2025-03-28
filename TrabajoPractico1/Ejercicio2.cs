@@ -12,8 +12,8 @@ namespace TrabajoPractico1
 {
     public partial class Ejercicio2: Form
     {
-        private readonly inicio inicio;
-        public Ejercicio2(inicio inicio)
+        private readonly Inicio inicio;
+        public Ejercicio2(Inicio inicio)
         {
             InitializeComponent();
             this.inicio = inicio;
