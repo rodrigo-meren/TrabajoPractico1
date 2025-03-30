@@ -23,5 +23,10 @@ namespace TrabajoPractico1
         {
             inicio.Show();
         }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            lblMostrar.Text = "Usted seleccionó los siguientes elementos:";
+        }
     }
 }

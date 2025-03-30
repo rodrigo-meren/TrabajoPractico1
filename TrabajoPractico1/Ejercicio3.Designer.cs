@@ -36,6 +36,8 @@
             this.rbSoltero = new System.Windows.Forms.RadioButton();
             this.rbCasado = new System.Windows.Forms.RadioButton();
             this.chkLbOficios = new System.Windows.Forms.CheckedListBox();
+            this.btnMostrar = new System.Windows.Forms.Button();
+            this.lblMostrar = new System.Windows.Forms.Label();
             this.gboxSexo.SuspendLayout();
             this.gboxEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -125,11 +127,34 @@
             this.chkLbOficios.Size = new System.Drawing.Size(189, 94);
             this.chkLbOficios.TabIndex = 2;
             // 
+            // btnMostrar
+            // 
+            this.btnMostrar.Location = new System.Drawing.Point(149, 250);
+            this.btnMostrar.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(161, 23);
+            this.btnMostrar.TabIndex = 3;
+            this.btnMostrar.Text = "Mostrar lo que se seleccionó";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
+            // lblMostrar
+            // 
+            this.lblMostrar.AutoSize = true;
+            this.lblMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostrar.Location = new System.Drawing.Point(45, 296);
+            this.lblMostrar.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.lblMostrar.Name = "lblMostrar";
+            this.lblMostrar.Size = new System.Drawing.Size(0, 20);
+            this.lblMostrar.TabIndex = 4;
+            // 
             // Ejercicio3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 450);
+            this.ClientSize = new System.Drawing.Size(472, 510);
+            this.Controls.Add(this.lblMostrar);
+            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.chkLbOficios);
             this.Controls.Add(this.gboxEstadoCivil);
             this.Controls.Add(this.gboxSexo);
@@ -156,5 +181,7 @@
         private System.Windows.Forms.RadioButton rbSoltero;
         private System.Windows.Forms.RadioButton rbCasado;
         private System.Windows.Forms.CheckedListBox chkLbOficios;
+        private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.Label lblMostrar;
     }
 }
