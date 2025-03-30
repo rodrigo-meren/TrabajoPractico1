@@ -33,8 +33,9 @@
             this.rbMasculino = new System.Windows.Forms.RadioButton();
             this.rbFemenino = new System.Windows.Forms.RadioButton();
             this.gboxEstadoCivil = new System.Windows.Forms.GroupBox();
-            this.rbCasado = new System.Windows.Forms.RadioButton();
             this.rbSoltero = new System.Windows.Forms.RadioButton();
+            this.rbCasado = new System.Windows.Forms.RadioButton();
+            this.chkLbOficios = new System.Windows.Forms.CheckedListBox();
             this.gboxSexo.SuspendLayout();
             this.gboxEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +88,16 @@
             this.gboxEstadoCivil.TabStop = false;
             this.gboxEstadoCivil.Text = "Estado Civil";
             // 
+            // rbSoltero
+            // 
+            this.rbSoltero.AutoSize = true;
+            this.rbSoltero.Location = new System.Drawing.Point(6, 42);
+            this.rbSoltero.Name = "rbSoltero";
+            this.rbSoltero.Size = new System.Drawing.Size(68, 20);
+            this.rbSoltero.TabIndex = 1;
+            this.rbSoltero.Text = "Soltero";
+            this.rbSoltero.UseVisualStyleBackColor = true;
+            // 
             // rbCasado
             // 
             this.rbCasado.AutoSize = true;
@@ -99,21 +110,27 @@
             this.rbCasado.Text = "Casado";
             this.rbCasado.UseVisualStyleBackColor = true;
             // 
-            // rbSoltero
+            // chkLbOficios
             // 
-            this.rbSoltero.AutoSize = true;
-            this.rbSoltero.Location = new System.Drawing.Point(6, 42);
-            this.rbSoltero.Name = "rbSoltero";
-            this.rbSoltero.Size = new System.Drawing.Size(68, 20);
-            this.rbSoltero.TabIndex = 1;
-            this.rbSoltero.Text = "Soltero";
-            this.rbSoltero.UseVisualStyleBackColor = true;
+            this.chkLbOficios.CheckOnClick = true;
+            this.chkLbOficios.FormattingEnabled = true;
+            this.chkLbOficios.Items.AddRange(new object[] {
+            "Data Enty",
+            "Operador de PC",
+            "Programador",
+            "Reparador de PC",
+            "Tester"});
+            this.chkLbOficios.Location = new System.Drawing.Point(137, 133);
+            this.chkLbOficios.Name = "chkLbOficios";
+            this.chkLbOficios.Size = new System.Drawing.Size(189, 94);
+            this.chkLbOficios.TabIndex = 2;
             // 
             // Ejercicio3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 450);
+            this.Controls.Add(this.chkLbOficios);
             this.Controls.Add(this.gboxEstadoCivil);
             this.Controls.Add(this.gboxSexo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -138,5 +155,6 @@
         private System.Windows.Forms.GroupBox gboxEstadoCivil;
         private System.Windows.Forms.RadioButton rbSoltero;
         private System.Windows.Forms.RadioButton rbCasado;
+        private System.Windows.Forms.CheckedListBox chkLbOficios;
     }
 }
